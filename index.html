@@ -6,10 +6,17 @@
   
   <body>
     <h1>Hello!</h1>
+    <div>
+      <button onclick="vibrate()">
+        Vibrate?
+      </button>
+    </div>
   </body>
   
   <script>
+    function vibrate() {
     window.navigator.vibrate(200);
+    }
   </script>
   
 </html>
