@@ -6,7 +6,7 @@ const userStatus = document.getElementById('user-status');
 
 picker.on('emoji', selection => {
     trigger.textContent = selection.emoji;
-    userStatus.textContent = selection.emoji;
+    userStatus.innerText = selection.emoji;
     picker.hidePicker();
 });
 
