@@ -5,6 +5,7 @@ const trigger = document.getElementById('emoji-bar');
 
 picker.on('emoji', selection => {
     trigger.textContent = selection.emoji;
+    picker.hidePicker();
 });
 
 trigger.addEventListener('click', () => picker.togglePicker(trigger));
