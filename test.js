@@ -10,4 +10,8 @@ picker.on('emoji', selection => {
     picker.hidePicker();
 });
 
+function setEmojiPicker() {
+picker.togglePicker(trigger);
+}
+
 trigger.addEventListener('click', () => picker.togglePicker(trigger));
