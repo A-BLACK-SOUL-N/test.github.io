@@ -20,11 +20,11 @@ function e(e,o,n,i){return new(n||(n=Promise))((function(a,r){function t(e){try{
 const picker = new rn({autoHide: true});
 const trigger = document.getElementById('emoji-trigger');
 const userStatus = document.getElementById('user-status');
-
+// Set emoji containers
 picker.on('emoji', selection => {
     trigger.textContent = selection.emoji;
     userStatus.innerText = selection.emoji;
     picker.hidePicker();
 });
-
+// Handle click on emoji button
 trigger.addEventListener('click', () => picker.togglePicker(trigger));
