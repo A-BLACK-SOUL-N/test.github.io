@@ -20,7 +20,7 @@ function e(e,o,n,i){return new(n||(n=Promise))((function(a,r){function t(e){try{
 
 const button = document.querySelector('#emoji-trigger');
 const emojiDemo = document.querySelector('#emoji-demo');
-const emojiName = document.querySelector('#emoji-name');
+const emojiName = document.getElementById('emoji-name');
                                          
 const picker = new rn();
 
