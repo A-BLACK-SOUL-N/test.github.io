@@ -24,6 +24,7 @@ const emojiDemo = document.querySelector('#emoji-demo');
 const picker = new rn();
 
 picker.on('emoji', emoji => {
+    button.value = emoji.emoji + ' تنظیم شد';
     emojiDemo.innerText = emoji.emoji;
   });
 
