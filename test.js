@@ -20,12 +20,10 @@ function e(e,o,n,i){return new(n||(n=Promise))((function(a,r){function t(e){try{
 
 const button = document.querySelector('#emoji-trigger');
 const emojiDemo = document.querySelector('#emoji-demo');
-const emojiName = document.getElementById('emoji-name');
                                          
 const picker = new rn();
 
 picker.on('emoji', emoji => {
-    console.log('en', emojiName);
     emojiDemo.innerText = emoji.emoji;
   });
 
