@@ -25,7 +25,6 @@ const emojiRemove = document.querySelector('#emoji-remove');
 const picker = new rn();
 
 picker.on('emoji', emoji => {
-    button.value = emoji.emoji + ' تنظیم شد';
     emojiRemove.style.display = 'inline-block';
     emojiDemo.innerText = emoji.emoji;
   });
