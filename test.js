@@ -20,14 +20,21 @@ function e(e,o,n,i){return new(n||(n=Promise))((function(a,r){function t(e){try{
 
 const button = document.querySelector('#emoji-trigger');
 const emojiDemo = document.querySelector('#emoji-demo');
+const emojiRemove = document.querySelector('#emoji-remove');
                                          
 const picker = new rn();
 
 picker.on('emoji', emoji => {
     button.value = emoji.emoji + ' تنظیم شد';
+    emojiRemove.style.display = 'block';
     emojiDemo.innerText = emoji.emoji;
   });
 
 button.addEventListener('click', () => {
   picker.togglePicker(button);
+});
+
+emojiRemove.addEventListener('click', () => {
+  emojiDemo.innerText = '';
+  emojiRemove.style.display = 'none';
 });
