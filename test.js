@@ -25,7 +25,7 @@ const emojiName = document.querySelector('#emoji-name');
 const picker = new rn();
 
 picker.on('emoji', emoji => {
-    emojiName.innerText = emoji.name;
+    console.log('en', emoji.name);
     emojiDemo.innerText = emoji.emoji;
   });
 
