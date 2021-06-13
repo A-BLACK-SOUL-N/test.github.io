@@ -35,6 +35,5 @@ button.addEventListener('click', () => {
 
 emojiRemove.addEventListener('click', () => {
   emojiDemo.innerText = '';
-  button.value = 'تنظیم وضعیت';
   emojiRemove.style.display = 'none';
 });
