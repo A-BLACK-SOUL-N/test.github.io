@@ -1,4 +1,4 @@
-import 'https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.0.3/dist/index.min.js';
+import { EmojiButton } from 'https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@4.6.0';
 const button = document.querySelector('#emoji-button');
 
 const picker = new EmojiButton();
