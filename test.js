@@ -5,6 +5,7 @@ const emojiDemo = document.getElementById('emoji-demo');
 const picker = new EmojiButton();
 
 picker.on('emoji', emoji => {
+    console.log('e', emoji)
     emojiDemo.innerText = emoji;
   });
 
