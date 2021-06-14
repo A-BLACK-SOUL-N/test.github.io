@@ -24,10 +24,6 @@ const emojiRemove = document.querySelector('#emoji-remove');
                                          
 const picker = new rn();
 
-if(emojiDemo.innerText.length > 0) {
-  emojiRemove.style.display = 'block';
-}
-
 picker.on('emoji', emoji => {
     emojiRemove.style.display = 'inline-block';
     emojiDemo.innerText = emoji.emoji;
