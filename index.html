@@ -451,38 +451,6 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
     </span>
     <a id="dnn_dnnSEARCH123587_cmdSearch" class="search" href="javascript:__doPostBack(&#39;dnn$dnnSEARCH123587$cmdSearch&#39;,&#39;&#39;)"> </a>
 </span>
-
-
-<script type="text/javascript">
-    $(function() {
-        if (typeof dnn != "undefined" && typeof dnn.searchSkinObject != "undefined") {
-            var searchSkinObject = new dnn.searchSkinObject({
-                delayTriggerAutoSearch : 400,
-                minCharRequiredTriggerAutoSearch : 2,
-                searchType: 'S',
-                enableWildSearch: true,
-                cultureCode: 'fa-IR',
-                portalId: -1
-                }
-            );
-            searchSkinObject.init();
-            
-            
-            // attach classic search
-            var siteBtn = $('#dnn_dnnSEARCH123587_SiteRadioButton');
-            var webBtn = $('#dnn_dnnSEARCH123587_WebRadioButton');
-            var clickHandler = function() {
-                if (siteBtn.is(':checked')) searchSkinObject.settings.searchType = 'S';
-                else searchSkinObject.settings.searchType = 'W';
-            };
-            siteBtn.on('change', clickHandler);
-            webBtn.on('change', clickHandler);
-            
-            
-        }
-    });
-</script>
-
                                 </div>
                             </div>
                         </div>
@@ -538,15 +506,8 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [],
        
       </div>
 </div>
-<div data-path="https://www.hemmatpc.com/Portals/_default/Skins/dng-theme-pro/" id="SkinPath"></div>
-
-<script type="text/javascript" src="https://www.hemmatpc.com/Portals/_default/Skins/dng-theme-pro/global-0.js"></script> 
-
-
-
         
     </form>
-    
-    
+      
 </body>
 </html>
